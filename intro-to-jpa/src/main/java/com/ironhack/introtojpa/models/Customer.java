@@ -2,6 +2,7 @@ package com.ironhack.introtojpa.models;
 
 import com.ironhack.introtojpa.enums.CustomerStatus;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,6 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 
 public class Customer {
 
@@ -23,4 +25,8 @@ public class Customer {
     private CustomerStatus customerStatus;
 
     private Integer totalCustomerMileage;
+
+
+    public Customer(String  customerName, CustomerStatus customerStatus, int i) {
+    }
 }

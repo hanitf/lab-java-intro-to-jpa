@@ -24,4 +24,6 @@ import lombok.Setter;
 
         private Integer flightMileage;
 
+    public Flight(String flightNumber, String aircraft, int totalAircraftSeats, int flightMileage) {
+    }
 }
